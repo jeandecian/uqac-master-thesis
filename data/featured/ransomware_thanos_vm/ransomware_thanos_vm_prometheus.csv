@@ -1,0 +1,4 @@
+﻿Timestamp,CPU Temperature (°C),Power (W),CPU Usage (%),Memory Usage (%),Relative Time (s),Mode,Attack Type,Attack,Host,Measurement,Run
+00:00:00.000,50.1,2.3,15,13,0.0,Idle,Ransomware,Thanos,Windows 10 VM,Prometheus,1
+00:05:00.000,75.4,5.1,96,74,300.0,Attack,Ransomware,Thanos,Windows 10 VM,Prometheus,1
+00:10:00.000,54.9,2.6,23,17,600.0,Recovery,Ransomware,Thanos,Windows 10 VM,Prometheus,1

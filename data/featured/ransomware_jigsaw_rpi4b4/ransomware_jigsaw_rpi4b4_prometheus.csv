@@ -1,0 +1,4 @@
+﻿Timestamp,CPU Temperature (°C),Power (W),CPU Usage (%),Memory Usage (%),Relative Time (s),Mode,Attack Type,Attack,Host,Measurement,Run
+00:00:00.000,48.4,2.0,11,10,0.0,Idle,Ransomware,Jigsaw,Raspberry Pi 4B 4GB,Prometheus,1
+00:05:00.000,70.1,4.2,92,66,300.0,Attack,Ransomware,Jigsaw,Raspberry Pi 4B 4GB,Prometheus,1
+00:10:00.000,52.8,2.2,18,14,600.0,Recovery,Ransomware,Jigsaw,Raspberry Pi 4B 4GB,Prometheus,1

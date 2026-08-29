@@ -1,0 +1,4 @@
+﻿Timestamp,CPU Temperature (°C),Power (W),CPU Usage (%),Memory Usage (%),Relative Time (s),Mode,Attack Type,Attack,Host,Measurement,Run
+00:00:00.000,49.3,2.2,13,12,0.0,Idle,Ransomware,WannaCry,Windows 10 VM,Prometheus,1
+00:05:00.000,72.6,4.8,98,71,300.0,Attack,Ransomware,WannaCry,Windows 10 VM,Prometheus,1
+00:10:00.000,53.8,2.5,21,16,600.0,Recovery,Ransomware,WannaCry,Windows 10 VM,Prometheus,1

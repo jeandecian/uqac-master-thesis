@@ -1,0 +1,3 @@
+﻿CPU Usage (%),CPU Temperature (°C),Memory Usage (%),Relative Time (s),Mode,Attack Type,Attack,Host,Measurement,Run
+1.125,50.5,17.87,0.0,Idle,Cryptojacking,XMRig (CPU),Raspberry Pi 3B 1GB,System,1
+100.0,84.4,37.61,1.0,Attack,Cryptojacking,XMRig (CPU),Raspberry Pi 3B 1GB,System,1

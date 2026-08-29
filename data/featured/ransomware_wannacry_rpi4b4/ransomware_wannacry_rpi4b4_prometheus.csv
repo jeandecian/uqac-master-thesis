@@ -1,0 +1,4 @@
+﻿Timestamp,CPU Temperature (°C),Power (W),CPU Usage (%),Memory Usage (%),Relative Time (s),Mode,Attack Type,Attack,Host,Measurement,Run
+00:00:00.000,48.7,2.1,13,11,0.0,Idle,Ransomware,WannaCry,Raspberry Pi 4B 4GB,Prometheus,1
+00:05:00.000,71.4,4.5,95,69,300.0,Attack,Ransomware,WannaCry,Raspberry Pi 4B 4GB,Prometheus,1
+00:10:00.000,53.5,2.4,20,15,600.0,Recovery,Ransomware,WannaCry,Raspberry Pi 4B 4GB,Prometheus,1

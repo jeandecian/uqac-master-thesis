@@ -1,0 +1,4 @@
+﻿Timestamp,CPU Temperature (°C),Power (W),CPU Usage (%),Memory Usage (%),Relative Time (s),Mode,Attack Type,Attack,Host,Measurement,Run
+00:00:00.000,49.2,2.2,12,12,0.0,Idle,Ransomware,Thanos,Raspberry Pi 4B 4GB,Prometheus,1
+00:05:00.000,73.3,4.8,96,71,300.0,Attack,Ransomware,Thanos,Raspberry Pi 4B 4GB,Prometheus,1
+00:10:00.000,54.0,2.5,22,16,600.0,Recovery,Ransomware,Thanos,Raspberry Pi 4B 4GB,Prometheus,1
