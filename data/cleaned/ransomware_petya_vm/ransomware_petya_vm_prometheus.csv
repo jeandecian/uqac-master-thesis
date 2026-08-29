@@ -1,0 +1,4 @@
+﻿Timestamp,CPU Temperature (°C),Power (W),CPU Usage (%),Memory Usage (Mo),Memory Usage (%)
+00:00:00.000,48.9,2.1,12,182,11
+00:05:00.000,71.8,4.6,97,789,69
+00:10:00.000,54.1,2.4,19,203,15
