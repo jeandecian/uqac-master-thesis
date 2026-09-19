@@ -42,3 +42,97 @@ The framework evaluates system behavior across **15 host environments**, **33 ta
 - **Cryptojacking:** CPU/GPU miners including `CoinIMP`, `XMRig`, `GMiner`, `lolMiner`, `miniZ`, `NBMiner`, `NiceHash`, `OneZeroMiner`, `SRBMiner Multi`, `T-Rex`, and `WildRig Multi`.
 - **Denial of Service (DoS):** Volumetric and application-layer attacks including `GoldenEye`, `Goloris`, `HULK`, `Hping3`, `MHDDoS (ICMP/TCP/UDP)`, `PyFlooder`, and `Slowloris`.
 - **Ransomware:** Encryption payloads including `Bstry`, `Jigsaw`, `Petya`, `Randomware`, `Ransomware-PoC`, `Rex`, `Thanos`, and `WannaCry`.
+
+## Dataset Summary Statistics
+
+The table below provides key descriptive statistics ($\mu, \sigma$, range, quartiles).
+
+|                                | count | mean ($\mu$) | std ($\sigma$) |       min |      25% |      50% |       75% |         max |
+| :----------------------------- | ----: | -----------: | -------------: | --------: | -------: | -------: | --------: | ----------: |
+| CPU Usage (%)                  | 12403 |      14.4192 |        21.0176 |         0 |      0.2 |      5.6 |        25 |         100 |
+| CPU Temperature (°C)           | 15797 |      58.1456 |        13.6175 |        37 |       46 |     55.5 |        69 |          97 |
+| Relative Time (s)              | 28387 |      557.071 |        586.251 |         0 |      173 |      366 |   660.708 |        3889 |
+| Run                            | 28387 |      1.09596 |       0.368213 |         1 |        1 |        1 |         1 |           3 |
+| Power (W)                      |  9016 |      3.21347 |        5.46682 |    -2.448 |    1.845 |     2.64 |     3.265 |        65.4 |
+| Memory Usage (%)               | 12401 |      32.3301 |        26.3863 |    2.6176 |  7.07647 |     21.8 |      57.8 |         100 |
+| Voltage (V)                    |  2788 |      2.40687 |      0.0559863 |      2.22 |     2.38 |      2.4 |      2.45 |        2.55 |
+| Voltage Adjusted (V)           |   901 |    0.0572919 |      0.0340391 |     -0.01 |     0.03 |     0.05 |       0.1 |        0.13 |
+| Current (A)                    |  8797 |     0.478125 |       0.295897 |    -0.204 |    0.191 |    0.514 |     0.633 |         1.5 |
+| CPU Temperature Core #1 (°C)   |  9788 |      58.2444 |         14.561 |        34 |       44 |       58 |        73 |          97 |
+| CPU Temperature Core #2 (°C)   |  9788 |      59.1924 |        15.1905 |        37 |       44 |       59 |        75 |          94 |
+| CPU Temperature Core #3 (°C)   |  9788 |      57.3792 |        14.4259 |        35 |       43 |       55 |        72 |          92 |
+| CPU Temperature Core #4 (°C)   |  9788 |      57.6006 |        14.2273 |        35 |       44 |       57 |        73 |          92 |
+| CPU Power (W)                  |  9788 |      12.4929 |        7.14874 |       2.8 |      5.2 |     13.5 |      17.5 |        52.3 |
+| CPU Power Cores (W)            |  9788 |      8.81229 |         6.4361 |       0.4 |      1.8 |      9.6 |      13.5 |        45.9 |
+| CPU Graphics Power (W)         |  9788 |    0.0746731 |        0.42849 |         0 |        0 |        0 |         0 |        10.6 |
+| GPU Temperature (°C)           |  9788 |      12.3266 |         24.256 |         0 |        0 |        0 |         0 |          96 |
+| GPU Usage (%)                  |  4022 |      28.8241 |          44.54 |         0 |        0 |        0 |        95 |         100 |
+| GPU Memory Usage (%)           |  4018 |      28.3296 |         38.057 |         2 |      2.4 |      2.4 |      66.9 |        99.6 |
+| GPU Power (W)                  |     2 |        26.25 |         22.981 |        10 |   18.125 |    26.25 |    34.375 |        42.5 |
+| CPU Usage User (%)             |  3600 |      3.24144 |        10.7004 |         0 |        0 |        0 |       0.2 |        96.5 |
+| CPU Usage System (%)           |  3600 |      5.30283 |        11.2813 |         0 |        0 |      0.2 |       0.5 |        43.1 |
+| CPU Usage Wait (%)             |  3600 |     0.120556 |         2.3687 |         0 |        0 |        0 |         0 |        72.7 |
+| Processes Runnable             |  3600 |      1.44972 |        1.38412 |         1 |        1 |        1 |         1 |          13 |
+| Processes Blocked              |  3600 |    0.0172222 |       0.325337 |         0 |        0 |        0 |         0 |          13 |
+| Process Switches               |  3600 |      7798.27 |        17536.3 |         0 |     45.9 |     89.8 |    253.25 |      100113 |
+| Process Forks                  |  3600 |      0.72775 |        1.16717 |         0 |        0 |        0 |         2 |        27.9 |
+| Process Execs                  |  3600 |            0 |              0 |         0 |        0 |        0 |         0 |           0 |
+| Network lo Received (Ko/s)     |  3600 |     0.183528 |        2.71176 |         0 |        0 |        0 |         0 |          52 |
+| Network eth0 Received (Ko/s)   |  3600 |            0 |              0 |         0 |        0 |        0 |         0 |           0 |
+| Network wlan0 Received (Ko/s)  |  3600 |      13.3728 |        56.4516 |         0 |        0 |        0 |         0 |       455.2 |
+| Network lo Sent (Ko/s)         |  3600 |    -0.183528 |        2.71176 |       -52 |       -0 |       -0 |         0 |          -0 |
+| Network eth0 Sent (Ko/s)       |  3600 |            0 |              0 |        -0 |       -0 |       -0 |         0 |          -0 |
+| Network wlan0 Sent (Ko/s)      |  3600 |      -1317.1 |        3753.11 |  -13840.9 |       -0 |       -0 |         0 |          -0 |
+| Network Packet lo Received     |  3600 |     0.329306 |        4.82705 |         0 |        0 |        0 |         0 |        92.8 |
+| Network Packet eth0 Received   |  3600 |            0 |              0 |         0 |        0 |        0 |         0 |           0 |
+| Network Packet wlan0 Received  |  3600 |      77.0146 |        239.447 |         0 |        0 |        0 |         0 |      1483.8 |
+| Network Packet lo Sent         |  3600 |     0.329306 |        4.82705 |         0 |        0 |        0 |         0 |        92.8 |
+| Network Packet eth0 Sent       |  3600 |            0 |              0 |         0 |        0 |        0 |         0 |           0 |
+| Network Packet wlan0 Sent      |  3600 |      1522.26 |        4762.35 |         0 |        0 |        0 |         1 |     21423.1 |
+| Disk mmcblk0 Usage (%)         |  1200 |       0.5865 |         5.8871 |         0 |        0 |        0 |         0 |         101 |
+| Disk mmcblk0p1 Usage (%)       |  1200 |            0 |              0 |         0 |        0 |        0 |         0 |           0 |
+| Disk mmcblk0p2 Usage (%)       |  1200 |         0.59 |        5.88841 |         0 |        0 |        0 |         0 |         101 |
+| Disk mmcblk0 Read (Ko/s)       |  1200 |      326.362 |        5884.58 |         0 |        0 |        0 |         0 |      138943 |
+| Disk mmcblk0p1 Read (Ko/s)     |  1200 |            0 |              0 |         0 |        0 |        0 |         0 |           0 |
+| Disk mmcblk0p2 Read (Ko/s)     |  1200 |      326.362 |        5884.58 |         0 |        0 |        0 |         0 |      138943 |
+| Disk mmcblk0 Write (Ko/s)      |  1200 |      8.37017 |         18.186 |         0 |        0 |        0 |        12 |       159.7 |
+| Disk mmcblk0p1 Write (Ko/s)    |  1200 |            0 |              0 |         0 |        0 |        0 |         0 |           0 |
+| Disk mmcblk0p2 Write (Ko/s)    |  1200 |      8.37017 |         18.186 |         0 |        0 |        0 |        12 |       159.7 |
+| Disk mmcblk0 Block Size (Ko)   |  1200 |      3.45192 |        8.87437 |         0 |        0 |        0 |         6 |       106.4 |
+| Disk mmcblk0p1 Block Size (Ko) |  1200 |            0 |              0 |         0 |        0 |        0 |         0 |           0 |
+| Disk mmcblk0p2 Block Size (Ko) |  1200 |      3.45192 |        8.87437 |         0 |        0 |        0 |         6 |       106.4 |
+| Disk mmcblk0 Transfers         |  1200 |      5.01858 |        66.3251 |         0 |        0 |        0 |         2 |        1489 |
+| Disk mmcblk0p1 Transfers       |  1200 |            0 |              0 |         0 |        0 |        0 |         0 |           0 |
+| Disk mmcblk0p2 Transfers       |  1200 |      5.01858 |        66.3251 |         0 |        0 |        0 |         2 |        1489 |
+| JFS dev Usage (%)              |  3600 |            0 |              0 |         0 |        0 |        0 |         0 |           0 |
+| JFS run Usage (%)              |  3600 |          0.2 |              0 |       0.2 |      0.2 |      0.2 |       0.2 |         0.2 |
+| JFS Usage (%)                  |  3600 |          7.6 |        1.00513 |       5.5 |      7.7 |      7.7 |       8.5 |         8.5 |
+| JFS boot/firmware Usage (%)    |  3600 |           28 |              0 |        28 |       28 |       28 |        28 |          28 |
+| Memory Active (%)              |  3600 |      1.91783 |         1.1942 | 0.0211238 |  1.27799 |  1.60409 |   1.85361 |     4.45976 |
+| Memory Buffers (%)             |  3600 |     0.459901 |       0.296008 |         0 | 0.311576 | 0.359104 |  0.396071 |     1.11164 |
+| Memory Cached (%)              |  3600 |      5.93018 |        7.12886 |  0.142586 |  2.20744 |  3.14876 |   3.84981 |     21.7522 |
+| Memory Inactive (%)            |  3600 |      5.98853 |        9.09347 |   1.05883 |  1.95923 |  2.97317 |   3.76267 |     96.3377 |
+| Disk mmcblk1 Usage (%)         |  2400 |     0.165208 |       0.519621 |         0 |        0 |        0 |         0 |           9 |
+| Disk mmcblk1p1 Usage (%)       |  2400 |            0 |              0 |         0 |        0 |        0 |         0 |           0 |
+| Disk mmcblk1p2 Usage (%)       |  2400 |     0.166458 |       0.516404 |         0 |        0 |        0 |         0 |           9 |
+| Disk mmcblk1 Read (Ko/s)       |  2400 |      2.30571 |        76.9588 |         0 |        0 |        0 |         0 |      3359.3 |
+| Disk mmcblk1p1 Read (Ko/s)     |  2400 |            0 |              0 |         0 |        0 |        0 |         0 |           0 |
+| Disk mmcblk1p2 Read (Ko/s)     |  2400 |      2.30571 |        76.9588 |         0 |        0 |        0 |         0 |      3359.3 |
+| Disk mmcblk1 Write (Ko/s)      |  2400 |      7.32183 |        17.5445 |         0 |        0 |        0 |         8 |       283.3 |
+| Disk mmcblk1p1 Write (Ko/s)    |  2400 |            0 |              0 |         0 |        0 |        0 |         0 |           0 |
+| Disk mmcblk1p2 Write (Ko/s)    |  2400 |      7.32183 |        17.5464 |         0 |        0 |        0 |         8 |       283.3 |
+| Disk mmcblk1 Block Size (Ko)   |  2400 |      2.94154 |        5.60268 |         0 |        0 |        0 |         6 |        88.8 |
+| Disk mmcblk1p1 Block Size (Ko) |  2400 |            0 |              0 |         0 |        0 |        0 |         0 |           0 |
+| Disk mmcblk1p2 Block Size (Ko) |  2400 |      2.93654 |        5.59518 |         0 |        0 |        0 |         6 |        88.8 |
+| Disk mmcblk1 Transfers         |  2400 |     0.912167 |         2.5383 |         0 |        0 |        0 |         1 |        37.9 |
+| Disk mmcblk1p1 Transfers       |  2400 |            0 |              0 |         0 |        0 |        0 |         0 |           0 |
+| Disk mmcblk1p2 Transfers       |  2400 |     0.912167 |        2.53846 |         0 |        0 |        0 |         1 |        37.9 |
+| Network (Ko/s)                 |  1992 |      2.40708 |        15.4457 |         0 |        0 |        0 | 0.0878906 |     536.861 |
+| Disk Read (Mo/s)               |   906 |  4.41501e-05 |    0.000813039 |         0 |        0 |        0 |         0 |        0.02 |
+| Disk Write (Mo/s)              |   906 |     0.462196 |        2.28141 |         0 |        0 |        0 |      0.01 |        26.5 |
+| Encrypted Files                |   906 |      487.507 |        555.743 |         0 |        0 |      144 |       802 |        1432 |
+| Encrypted Disk Usage (%)       |   906 |      30.1977 |        35.9688 |         0 |        0 |   18.535 |     39.27 |        96.9 |
+| Encrypted Files Size (Mo)      |   682 |      44.2062 |        74.2018 |         0 |        0 |      1.3 |     73.86 |       193.7 |
+| Encryption Speed (o/s)         |   906 |       452105 |    3.04599e+06 |         0 |        0 |        0 |         0 | 5.83715e+07 |
+
+> *Table generated automatically using pandas:* `merged_df.describe().T.to_markdown()`
