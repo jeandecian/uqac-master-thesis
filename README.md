@@ -4,6 +4,22 @@
 
 [![Thesis](https://img.shields.io/badge/Thesis-UQAC%20Constellation-6B8915)](https://constellation.uqac.ca/id/eprint/10491/)
 
+## Foundational Publications
+
+This repository and thesis build upon empirical frameworks and preliminaries established in our prior works:
+
+### [Cyberattacks Are a Major Source of Global Carbon Emissions](https://www.doi.org/10.1109/ACCESS.2026.3655210)
+
+- *Jean Decian, Fehmi Jaafar*
+- *IEEE Access, 2026*
+- *Focus:* Introduces a comprehensive multi-vector framework quantifying operational GHG emissions across cryptojacking, ransomware, and DoS attacks, estimating global impact at 526–1,052 MtCO2eq/year.
+
+### [Estimating the Carbon Footprint of Cyberattacks: The Ransomware Case](https://www.doi.org/10.1007/978-3-032-05832-4_3)
+
+- *Fehmi Jaafar, Jean Decian*  
+- *Springer LNICST, 2026*
+- *Focus:* Proposes the CyberAttack Carbon Footprint (CACF) model to evaluate embodied, operational, and transfer emissions specific to ransomware attacks, establishing the initial methodology expanded in this thesis.
+
 ## Abstract
 
 ### French Original
