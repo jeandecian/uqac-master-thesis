@@ -136,3 +136,90 @@ The table below provides key descriptive statistics ($\mu, \sigma$, range, quart
 | Encryption Speed (o/s)         |   906 |       452105 |    3.04599e+06 |         0 |        0 |        0 |         0 | 5.83715e+07 |
 
 > *Table generated automatically using pandas:* `merged_df.describe().T.to_markdown()`
+
+## Statistical Analysis
+
+To evaluate whether system resource consumption and physical power draw increase significantly during active cyberattacks compared to baseline idle states, paired non-parametric Wilcoxon signed-rank tests were performed across all recorded telemetry metrics within each attack vector.
+
+|      | Metric                         | Attack Type       |    n | Wilcoxon Statistic |     p-value | Significant |
+| ---: | :----------------------------- | :---------------- | ---: | -----------------: | ----------: | :---------- |
+|    0 | CPU Usage (%)                  | Cryptojacking     |   19 |                179 | 0.000104904 | True        |
+|    1 | CPU Usage (%)                  | Denial of Service |   10 |                 51 |  0.00683594 | True        |
+|    2 | CPU Usage (%)                  | Ransomware        |   14 |                105 | 0.000478119 | True        |
+|    3 | CPU Temperature (°C)           | Cryptojacking     |   23 |                276 | 1.19209e-07 | True        |
+|    4 | CPU Temperature (°C)           | Denial of Service |    6 |                 19 |    0.046875 | True        |
+|    5 | CPU Temperature (°C)           | Ransomware        |   14 |                105 | 0.000489353 | True        |
+|    6 | Power (W)                      | Cryptojacking     |    2 |                  3 |        0.25 | False       |
+|    7 | Power (W)                      | Denial of Service |   17 |                152 |  0.00017543 | True        |
+|    8 | Power (W)                      | Ransomware        |   14 |                105 | 0.000486528 | True        |
+|    9 | Memory Usage (%)               | Cryptojacking     |   18 |                171 |  3.8147e-06 | True        |
+|   10 | Memory Usage (%)               | Denial of Service |   10 |               53.5 |  0.00292969 | True        |
+|   11 | Memory Usage (%)               | Ransomware        |   14 |                104 | 0.000592249 | True        |
+|   12 | Voltage (V)                    | Cryptojacking     |    1 |                  1 |         0.5 | False       |
+|   13 | Voltage (V)                    | Denial of Service |    3 |                  0 |           1 | False       |
+|   14 | Voltage (V)                    | Ransomware        |    4 |                  0 |           1 | False       |
+|   15 | Voltage Adjusted (V)           | Cryptojacking     |    1 |                  1 |         0.5 | False       |
+|   16 | Current (A)                    | Cryptojacking     |    1 |                  1 |         0.5 | False       |
+|   17 | Current (A)                    | Denial of Service |   13 |                 55 | 0.000976562 | True        |
+|   18 | Current (A)                    | Ransomware        |    4 |                 10 |      0.0625 | False       |
+|   19 | CPU Temperature Core #1 (°C)   | Cryptojacking     |   15 |                120 | 3.05176e-05 | True        |
+|   20 | CPU Temperature Core #2 (°C)   | Cryptojacking     |   15 |                120 | 3.05176e-05 | True        |
+|   21 | CPU Temperature Core #3 (°C)   | Cryptojacking     |   15 |                120 | 3.05176e-05 | True        |
+|   22 | CPU Temperature Core #4 (°C)   | Cryptojacking     |   15 |                120 | 3.05176e-05 | True        |
+|   23 | CPU Power (W)                  | Cryptojacking     |   15 |                111 |  0.00100708 | True        |
+|   24 | CPU Power Cores (W)            | Cryptojacking     |   15 |                107 |  0.00268555 | True        |
+|   25 | CPU Graphics Power (W)         | Cryptojacking     |   15 |                 45 |    0.142763 | False       |
+|   26 | GPU Temperature (°C)           | Cryptojacking     |   15 |                103 |  0.00622559 | True        |
+|   27 | GPU Usage (%)                  | Cryptojacking     |   11 |                 66 | 0.000488281 | True        |
+|   28 | GPU Memory Usage (%)           | Cryptojacking     |    9 |                 45 |  0.00195312 | True        |
+|   29 | GPU Power (W)                  | Cryptojacking     |    1 |                  1 |         0.5 | False       |
+|   30 | CPU Usage User (%)             | Denial of Service |    6 |                 20 |     0.03125 | True        |
+|   31 | CPU Usage System (%)           | Denial of Service |    6 |                 20 |     0.03125 | True        |
+|   32 | CPU Usage Wait (%)             | Denial of Service |    6 |                  5 |     0.78125 | False       |
+|   33 | Processes Runnable             | Denial of Service |    6 |                 21 |    0.015625 | True        |
+|   34 | Processes Blocked              | Denial of Service |    3 |                  6 |       0.125 | False       |
+|   35 | Process Switches               | Denial of Service |    6 |                 20 |     0.03125 | True        |
+|   36 | Process Forks                  | Denial of Service |    6 |               13.5 |    0.296875 | False       |
+|   37 | Network lo Received (Ko/s)     | Denial of Service |    1 |                  1 |         0.5 | False       |
+|   38 | Network wlan0 Received (Ko/s)  | Denial of Service |    6 |                 15 |     0.03125 | True        |
+|   39 | Network lo Sent (Ko/s)         | Denial of Service |    1 |                  0 |           1 | False       |
+|   40 | Network wlan0 Sent (Ko/s)      | Denial of Service |    5 |                  0 |           1 | False       |
+|   41 | Network Packet lo Received     | Denial of Service |    1 |                  1 |         0.5 | False       |
+|   42 | Network Packet wlan0 Received  | Denial of Service |    6 |                 20 |     0.03125 | True        |
+|   43 | Network Packet lo Sent         | Denial of Service |    1 |                  1 |         0.5 | False       |
+|   44 | Network Packet wlan0 Sent      | Denial of Service |    6 |                 15 |     0.03125 | True        |
+|   45 | Disk mmcblk0 Usage (%)         | Denial of Service |    2 |                  2 |         0.5 | False       |
+|   46 | Disk mmcblk0p2 Usage (%)       | Denial of Service |    2 |                  2 |         0.5 | False       |
+|   47 | Disk mmcblk0 Read (Ko/s)       | Denial of Service |    2 |                  2 |         0.5 | False       |
+|   48 | Disk mmcblk0p2 Read (Ko/s)     | Denial of Service |    2 |                  2 |         0.5 | False       |
+|   49 | Disk mmcblk0 Write (Ko/s)      | Denial of Service |    2 |                  0 |           1 | False       |
+|   50 | Disk mmcblk0p2 Write (Ko/s)    | Denial of Service |    2 |                  0 |           1 | False       |
+|   51 | Disk mmcblk0 Block Size (Ko)   | Denial of Service |    2 |                  2 |         0.5 | False       |
+|   52 | Disk mmcblk0p2 Block Size (Ko) | Denial of Service |    2 |                  2 |         0.5 | False       |
+|   53 | Disk mmcblk0 Transfers         | Denial of Service |    2 |                  2 |         0.5 | False       |
+|   54 | Disk mmcblk0p2 Transfers       | Denial of Service |    2 |                  2 |         0.5 | False       |
+|   55 | JFS run Usage (%)              | Denial of Service |    6 |                  0 |           1 | False       |
+|   56 | JFS Usage (%)                  | Denial of Service |    6 |                  0 |           1 | False       |
+|   57 | JFS boot/firmware Usage (%)    | Denial of Service |    6 |                  0 |           1 | False       |
+|   58 | Memory Active (%)              | Denial of Service |    6 |                  3 |       0.625 | False       |
+|   59 | Memory Buffers (%)             | Denial of Service |    6 |                 11 |        0.25 | False       |
+|   60 | Memory Cached (%)              | Denial of Service |    6 |                6.5 |       0.375 | False       |
+|   61 | Memory Inactive (%)            | Denial of Service |    6 |                 21 |    0.015625 | True        |
+|   62 | Disk mmcblk1 Usage (%)         | Denial of Service |    4 |                  5 |      0.5625 | False       |
+|   63 | Disk mmcblk1p2 Usage (%)       | Denial of Service |    4 |                  5 |      0.5625 | False       |
+|   64 | Disk mmcblk1 Read (Ko/s)       | Denial of Service |    3 |                  1 |       0.875 | False       |
+|   65 | Disk mmcblk1p2 Read (Ko/s)     | Denial of Service |    3 |                  1 |       0.875 | False       |
+|   66 | Disk mmcblk1 Write (Ko/s)      | Denial of Service |    4 |                  4 |      0.6875 | False       |
+|   67 | Disk mmcblk1p2 Write (Ko/s)    | Denial of Service |    4 |                  4 |      0.6875 | False       |
+|   68 | Disk mmcblk1 Block Size (Ko)   | Denial of Service |    4 |                  3 |      0.8125 | False       |
+|   69 | Disk mmcblk1p2 Block Size (Ko) | Denial of Service |    4 |                  3 |      0.8125 | False       |
+|   70 | Disk mmcblk1 Transfers         | Denial of Service |    4 |                  4 |      0.6875 | False       |
+|   71 | Disk mmcblk1p2 Transfers       | Denial of Service |    4 |                  4 |      0.6875 | False       |
+|   72 | Network (Ko/s)                 | Denial of Service |    3 |                  6 |       0.125 | False       |
+|   73 | Disk Write (Mo/s)              | Ransomware        |    4 |                 10 |      0.0625 | False       |
+|   74 | Encrypted Files                | Ransomware        |    4 |                 10 |      0.0625 | False       |
+|   75 | Encrypted Disk Usage (%)       | Ransomware        |    4 |                 10 |      0.0625 | False       |
+|   76 | Encrypted Files Size (Mo)      | Ransomware        |    3 |                  6 |       0.125 | False       |
+|   77 | Encryption Speed (o/s)         | Ransomware        |    4 |                 10 |      0.0625 | False       |
+
+> *Table generated automatically using pandas:* `statistics_df.to_markdown()`
