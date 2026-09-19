@@ -25,3 +25,20 @@ The data processing pipeline is implemented in [notebook.ipynb](/notebook.ipynb)
 | [featured](/data/featured)     | Variable Engineering       | Processed data augmented with calculated metrics (e.g., relative runtime, converted units, CPU/Memory percentages, and assigned attack modes: *Idle*, *Attack*, *Recovery*).     |
 | [merged](/data/merged)         | Integration                | Unified dataset ([merged.csv](/data/merged/merged.csv)) combining featured logs across all attack vectors, host systems, measurement mechanisms, and execution runs.             |
 | [aggregated](/data/aggregated) | Analytical Output          | Summarized mean metrics ([means.csv](/data/aggregated/means.csv)) grouped by attack category, host system, and attack mode for downstream energy and carbon accounting analysis. |
+
+## Experimental Variables
+
+The framework evaluates system behavior across **15 host environments**, **33 target attack configurations**, and **3 execution modes** (*Idle*, *Attack*, *Recovery*).
+
+### Host Environments
+
+- **Edge & Embedded Devices:** `Raspberry Pi 3B 1GB`, `Raspberry Pi 4B 2GB`, `Raspberry Pi 4B 4GB`, `Raspberry Pi 4B 8GB`, and `Raspberry Pi 5`.
+- **Smart & IoT Equipment:** `HOSAFE HX-2PT1` (IP Camera), `D-Link DIR-822` (Router), `Huawei H151-381` (Router), and `TP-Link Tapo C200` (Smart Camera).
+- **Workstations & Laptops:** `ASUS Zenbook UX51VZ`, `Apple M1 Pro`, `Apple MacBook Pro i7 2013`, `HP Victus 16-d0417nf`, and `Windows 11 i7 GeForce RTX 4060 Laptop`.
+- **Virtualization:** `Windows 10 VM`.
+
+### Threat Vectors & Attack Categories
+
+- **Cryptojacking:** CPU/GPU miners including `CoinIMP`, `XMRig`, `GMiner`, `lolMiner`, `miniZ`, `NBMiner`, `NiceHash`, `OneZeroMiner`, `SRBMiner Multi`, `T-Rex`, and `WildRig Multi`.
+- **Denial of Service (DoS):** Volumetric and application-layer attacks including `GoldenEye`, `Goloris`, `HULK`, `Hping3`, `MHDDoS (ICMP/TCP/UDP)`, `PyFlooder`, and `Slowloris`.
+- **Ransomware:** Encryption payloads including `Bstry`, `Jigsaw`, `Petya`, `Randomware`, `Ransomware-PoC`, `Rex`, `Thanos`, and `WannaCry`.
